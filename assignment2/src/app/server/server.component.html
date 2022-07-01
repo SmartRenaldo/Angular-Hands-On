@@ -1,0 +1,8 @@
+<input type="text"
+       class="form-control"
+       [(ngModel)]="username"
+>
+<button class="btn btn-outline-primary"
+  [disabled]="isEmpty()" (click)="username = ''"
+>Clear</button>
+<p class="display-1" [innerHTML]="username"></p>
